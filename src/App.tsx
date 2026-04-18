@@ -236,62 +236,79 @@ export default function App() {
         </section>
 
         {/* INDIVIDUAL FOUNDER PAGES */}
-        <section className="bg-vanilla border-b-2 border-black">
-          {/* MALAK */}
-          <div className="min-h-screen flex flex-col md:flex-row border-b-2 border-black last:border-b-0">
-            <div className="w-full md:w-1/2 p-6 md:p-12 lg:p-24 flex flex-col justify-center border-b-2 md:border-b-0 md:border-r-2 border-black">
-              <span className="text-xs uppercase tracking-[0.4em] font-black text-burgundy mb-8 block">FOUNDER / 01</span>
-              <h2 className="font-display text-[12vw] md:text-[8vw] font-black leading-[0.8] tracking-tightest mb-8 uppercase">
-                Malak
-              </h2>
-              <p className="font-display text-lg md:text-xl font-bold uppercase tracking-tighter">
-                Lead Web & App Developer | Creative Technologist
-              </p>
-              <div className="mt-12 flex gap-4">
-                <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><Instagram size={20} /></a>
-                <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={20} /></a>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 bg-neutral-900 flex items-center justify-center p-12 overflow-hidden group">
-              {/* Picture Placeholder for Malak */}
-              <div className="w-full h-full max-w-md aspect-[3/4] bg-neutral-800 border-2 border-black relative overflow-hidden flex items-center justify-center">
-                <img 
-                  src="https://i.ibb.co/fdJQ4xvX/IMG-9098.jpg" 
-                  alt="Malak"
-                  className="w-full h-full object-cover transition-all duration-500"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-0 left-0 w-full h-full bg-burgundy/0 group-hover:bg-burgundy/5 transition-colors pointer-events-none" />
-              </div>
-            </div>
-          </div>
+        <section className="bg-vanilla border-b-2 border-black py-32 md:py-48">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 md:gap-48">
+              {/* MALAK */}
+              <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center text-center group"
+              >
+                <div className="relative w-full aspect-[3/4] max-w-sm mb-16 overflow-hidden bg-neutral-900 border-2 border-black">
+                  <img 
+                    src="https://i.ibb.co/fdJQ4xvX/IMG-9098.jpg" 
+                    alt="Malak"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-burgundy/5 group-hover:bg-transparent transition-colors duration-500" />
+                </div>
+                
+                <h2 className="font-display text-6xl md:text-8xl font-black uppercase tracking-tighter mb-4">
+                  Malak
+                </h2>
+                
+                <p className="text-xs uppercase tracking-[0.4em] font-black text-burgundy mb-6">
+                  Co-Founder — Digital Systems
+                </p>
+                
+                <p className="font-display text-xl md:text-2xl font-medium leading-tight tracking-tight opacity-70 max-w-xs transition-opacity group-hover:opacity-100">
+                  Leads development of high-performance digital platforms.
+                </p>
+                
+                <div className="mt-12 flex gap-4">
+                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><Instagram size={18} /></a>
+                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
+                </div>
+              </motion.div>
 
-          {/* YASIR */}
-          <div className="min-h-screen flex flex-col md:flex-row-reverse">
-            <div className="w-full md:w-1/2 p-6 md:p-12 lg:p-24 flex flex-col justify-center border-b-2 md:border-b-0 md:border-l-2 border-black text-right items-end">
-              <span className="text-xs uppercase tracking-[0.4em] font-black text-burgundy mb-8 block">FOUNDER / 02</span>
-              <h2 className="font-display text-[12vw] md:text-[8vw] font-black leading-[0.8] tracking-tightest mb-8 uppercase">
-                Yasir
-              </h2>
-              <p className="font-display text-lg md:text-xl font-bold uppercase tracking-tighter">
-                CREATIVE TECHNOLOGIST | CONTENT, MEDIA & WEB SUPPORT
-              </p>
-              <div className="mt-12 flex gap-4">
-                <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><Instagram size={20} /></a>
-                <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={20} /></a>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 bg-neutral-900 flex items-center justify-center p-12 overflow-hidden group border-b-2 md:border-b-0 border-black">
-              {/* Picture Placeholder for Yasir */}
-              <div className="w-full h-full max-w-md aspect-[3/4] bg-neutral-800 border-2 border-black relative overflow-hidden flex items-center justify-center">
-                <img 
-                  src="https://i.ibb.co/C5KbJfkQ/IMG-9128.jpg" 
-                  alt="Yasir"
-                  className="w-full h-full object-cover transition-all duration-500"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-0 left-0 w-full h-full bg-burgundy/0 group-hover:bg-burgundy/5 transition-colors pointer-events-none" />
-              </div>
+              {/* YASIR */}
+              <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="flex flex-col items-center text-center group"
+              >
+                <div className="relative w-full aspect-[3/4] max-w-sm mb-16 overflow-hidden bg-neutral-900 border-2 border-black">
+                  <img 
+                    src="https://i.ibb.co/C5KbJfkQ/IMG-9128.jpg" 
+                    alt="Yasir"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-burgundy/5 group-hover:bg-transparent transition-colors duration-500" />
+                </div>
+                
+                <h2 className="font-display text-6xl md:text-8xl font-black uppercase tracking-tighter mb-4">
+                  Yasir
+                </h2>
+                
+                <p className="text-xs uppercase tracking-[0.4em] font-black text-burgundy mb-6">
+                  Co-Founder — Creative Direction
+                </p>
+                
+                <p className="font-display text-xl md:text-2xl font-medium leading-tight tracking-tight opacity-70 max-w-xs transition-opacity group-hover:opacity-100">
+                  Leads content and visual storytelling across projects.
+                </p>
+                
+                <div className="mt-12 flex gap-4">
+                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><Instagram size={18} /></a>
+                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
