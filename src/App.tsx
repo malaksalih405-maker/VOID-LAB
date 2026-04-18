@@ -62,16 +62,16 @@ export default function App() {
             
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mt-20">
               <div className="md:col-span-8">
-                <h2 className="font-display text-2xl md:text-3xl font-black text-burgundy uppercase tracking-widest mb-4">
-                  Full-Service Creative Tech Studio
-                </h2>
                 <p className="font-display text-2xl md:text-4xl lg:text-5xl font-medium leading-[1.1] tracking-tight text-balance text-black">
-                  We design and build digital brands, experiences, and content systems that blend creativity and technology.
+                  We design and build high-performance digital systems for modern brands.
+                </p>
+                <p className="font-display text-sm md:text-lg tracking-[0.2em] uppercase opacity-50 mt-8">
+                  Built for brands operating at scale.
                 </p>
               </div>
               <div className="md:col-span-4 flex flex-col justify-end">
                 <div className="space-y-4 border-t-2 border-black pt-6">
-                  <p className="text-xs uppercase tracking-[0.3em] font-black text-burgundy">MISSION / 01</p>
+                  <p className="text-xs uppercase tracking-[0.3em] font-black text-burgundy">MISSION / 2026</p>
                   <p className="font-medium text-lg leading-tight">
                     Design. Development.<br />
                     Content. Experiences.
@@ -106,7 +106,7 @@ export default function App() {
         <section className="py-24 border-b-2 border-black">
           <div className="px-6 md:px-12 lg:px-24 mb-20">
             <h2 className="font-display text-4xl md:text-6xl font-black uppercase tracking-tighter">
-              Capabilities <span className="text-burgundy">/</span> what we do
+              Capabilities <span className="text-burgundy">/</span> SYSTEMS
             </h2>
           </div>
           
@@ -126,10 +126,7 @@ export default function App() {
                 viewport={{ once: true }}
                 className="p-12 border-b-2 md:border-r-2 border-black group hover:bg-black hover:text-white transition-all duration-500 cursor-none relative overflow-hidden"
               >
-                <span className="text-xs font-black mb-12 block text-burgundy group-hover:text-red-400 transition-colors">
-                  {item.id}
-                </span>
-                <h3 className="font-display text-3xl md:text-4xl font-bold leading-none tracking-tighter group-hover:translate-x-4 transition-transform duration-500">
+                <h3 className="font-display text-3xl md:text-4xl font-bold leading-none tracking-tighter group-hover:translate-x-4 transition-transform duration-500 mt-8">
                   {item.title}
                 </h3>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none">
@@ -148,15 +145,15 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >
-            <span className="text-xs uppercase tracking-[0.5em] font-black mb-12 block mix-blend-difference">VISUAL ARCHIVE</span>
-            <h2 className="font-display text-7xl md:text-[10vw] font-black leading-[0.8] tracking-tighter mb-20 text-balance relative">
+            <span className="text-xs uppercase tracking-[0.5em] font-black mb-12 block mix-blend-difference">CASE STUDIES</span>
+            <h2 className="font-display text-7xl md:text-[10vw] font-black leading-[0.8] tracking-tighter mb-12 text-balance relative">
               <motion.span
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 1 }}
                 className="inline-block"
               >
-                ENTER THE
+                SELECTED
               </motion.span>
               <br />
               <motion.span
@@ -165,58 +162,54 @@ export default function App() {
                 transition={{ delay: 0.4, duration: 1 }}
                 className="inline-block italic text-black"
               >
-                VOID.
+                WORK.
               </motion.span>
             </h2>
+
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+              className="font-display text-sm md:text-lg tracking-widest uppercase opacity-60 mb-20 max-w-2xl mx-auto"
+            >
+              Built for brands across digital, fashion, and emerging markets
+            </motion.p>
             
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative"
+              className="relative flex justify-center"
             >
-              <div className="relative group">
-                {/* Decorative Luxurious Ring */}
+              <motion.a
+                href={CANVA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="hover"
+                initial="initial"
+                className="relative flex items-center gap-6 bg-vanilla text-black px-12 py-5 rounded-full border-2 border-black overflow-hidden group/btn shadow-xl"
+              >
+                {/* Luxury Fill Effect */}
                 <motion.div 
-                  animate={{ rotate: 360 }}
-                  transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-                  className="absolute -inset-8 border border-white/20 rounded-full hidden md:block"
+                  variants={{
+                    hover: { y: 0 },
+                    initial: { y: "100%" }
+                  }}
+                  transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                  className="absolute inset-0 bg-black"
                 />
                 
-                <motion.a
-                  href={CANVA_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover="hover"
-                  initial="initial"
-                  className="relative flex items-center gap-6 bg-vanilla text-black px-16 py-8 rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-black overflow-hidden group/btn"
-                >
-                  {/* Luxury Fill Effect */}
-                  <motion.div 
-                    variants={{
-                      hover: { y: 0 },
-                      initial: { y: "100%" }
-                    }}
-                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                    className="absolute inset-0 bg-black"
+                <span className="relative z-10 font-display text-sm uppercase tracking-[0.2em] font-bold group-hover/btn:text-white transition-colors duration-300">
+                  View Case Studies
+                </span>
+                
+                <div className="relative z-10 w-8 h-8 flex items-center justify-center bg-black rounded-full group-hover/btn:bg-vanilla transition-colors duration-300">
+                  <ArrowUpRight 
+                    className="text-white group-hover/btn:text-black transition-all duration-300" 
+                    size={18} 
                   />
-                  
-                  <span className="relative z-10 font-handwriting text-5xl md:text-7xl group-hover/btn:text-white transition-colors duration-500 pr-2">
-                    Go to Showcase
-                  </span>
-                  
-                  <div className="relative z-10 w-12 h-12 flex items-center justify-center bg-black rounded-full group-hover/btn:bg-vanilla transition-colors duration-500">
-                    <ArrowUpRight 
-                      className="text-white group-hover/btn:text-black group-hover:rotate-45 transition-all duration-500" 
-                      size={28} 
-                    />
-                  </div>
-                </motion.a>
-              </div>
-              
-              <p className="font-handwriting text-3xl md:text-4xl mt-8 text-black opacity-80 decoration-black/20 underline underline-offset-8">
-                Curated visuals for the bold
-              </p>
+                </div>
+              </motion.a>
             </motion.div>
           </motion.div>
           
@@ -265,7 +258,7 @@ export default function App() {
                 </p>
                 
                 <p className="font-display text-xl md:text-2xl font-medium leading-tight tracking-tight opacity-70 max-w-xs transition-opacity group-hover:opacity-100">
-                  Leads development of high-performance digital platforms.
+                  Leads engineering and development of scalable digital systems.
                 </p>
                 
                 <div className="mt-12 flex gap-4">
@@ -301,7 +294,7 @@ export default function App() {
                 </p>
                 
                 <p className="font-display text-xl md:text-2xl font-medium leading-tight tracking-tight opacity-70 max-w-xs transition-opacity group-hover:opacity-100">
-                  Leads content and visual storytelling across projects.
+                  Leads creative direction, content, and brand storytelling.
                 </p>
                 
                 <div className="mt-12 flex gap-4">
@@ -318,7 +311,7 @@ export default function App() {
           <div className="flex flex-col lg:flex-row justify-between items-start gap-20">
             <div className="max-w-2xl">
               <h3 className="font-display text-4xl md:text-6xl font-black italic mb-8">
-                Let’s build something <span className="text-burgundy underline">different</span> together.
+                For serious collaborations and <span className="text-burgundy underline">long-term partnerships</span>.
               </h3>
               <a 
                 href="mailto:voidlabteam@gmail.com"
