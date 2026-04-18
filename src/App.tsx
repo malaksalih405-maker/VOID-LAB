@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowUpRight, Mail, Instagram } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 
 const CANVA_URL = "https://www.canva.com/";
 
@@ -262,7 +262,6 @@ export default function App() {
                 </p>
                 
                 <div className="mt-12 flex gap-4">
-                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><Instagram size={18} /></a>
                   <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
                 </div>
               </motion.div>
@@ -298,7 +297,6 @@ export default function App() {
                 </p>
                 
                 <div className="mt-12 flex gap-4">
-                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><Instagram size={18} /></a>
                   <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
                 </div>
               </motion.div>
@@ -325,9 +323,9 @@ export default function App() {
               <div className="space-y-4">
                 <p className="text-xs uppercase tracking-[0.3em] font-black">CONNECT</p>
                 <div className="flex gap-6 justify-end">
-                  <a href="#" className="hover:text-burgundy">INS</a>
+                  <a href="https://www.instagram.com/voidlabworld?igsh=MWdqeWgwMHJmeTMxdQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-burgundy">INS</a>
                   <a href="#" className="hover:text-burgundy">X</a>
-                  <a href="#" className="hover:text-burgundy">GH</a>
+                  <a href="https://www.tiktok.com/@voidlabworld?_r=1&_t=ZS-95ebC2h6CL2" target="_blank" rel="noopener noreferrer" className="hover:text-burgundy">TT</a>
                 </div>
               </div>
               <div className="mt-20">
