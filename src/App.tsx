@@ -254,11 +254,11 @@ export default function App() {
                 </h2>
                 
                 <p className="text-xs uppercase tracking-[0.4em] font-black text-burgundy mb-6">
-                  Co-Founder — Digital Systems
+                  Co-Founder — Creative & Systems
                 </p>
                 
                 <p className="font-display text-xl md:text-2xl font-medium leading-tight tracking-tight opacity-70 max-w-xs transition-opacity group-hover:opacity-100">
-                  Leads engineering and development of scalable digital systems.
+                  Drives creative direction and develops high-performance digital systems built to scale.
                 </p>
                 
                 <div className="mt-12 flex gap-4">
@@ -289,11 +289,11 @@ export default function App() {
                 </h2>
                 
                 <p className="text-xs uppercase tracking-[0.4em] font-black text-burgundy mb-6">
-                  Co-Founder — Creative Direction
+                  Co-Founder — Production & Operations
                 </p>
                 
                 <p className="font-display text-xl md:text-2xl font-medium leading-tight tracking-tight opacity-70 max-w-xs transition-opacity group-hover:opacity-100">
-                  Leads creative direction, content, and brand storytelling.
+                  Manages production and operations, ensuring consistency and structured execution.
                 </p>
                 
                 <div className="mt-12 flex gap-4">
