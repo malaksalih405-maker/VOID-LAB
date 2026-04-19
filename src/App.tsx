@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight, Mail, Instagram, Music2, MessageCircle } from "lucide-react";
 
 const CANVA_URL = "https://www.canva.com/";
 
@@ -322,10 +322,34 @@ export default function App() {
             <div className="flex flex-col justify-between h-full text-right w-full lg:w-auto">
               <div className="space-y-4">
                 <p className="text-xs uppercase tracking-[0.3em] font-black">CONNECT</p>
-                <div className="flex gap-6 justify-end">
-                  <a href="https://www.instagram.com/voidlabworld?igsh=MWdqeWgwMHJmeTMxdQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-burgundy">INS</a>
-                  <a href="#" className="hover:text-burgundy">X</a>
-                  <a href="https://www.tiktok.com/@voidlabworld?_r=1&_t=ZS-95ebC2h6CL2" target="_blank" rel="noopener noreferrer" className="hover:text-burgundy">TT</a>
+                <div className="flex gap-8 justify-end items-center">
+                  <a 
+                    href="https://www.instagram.com/voidlabworld?igsh=MWdqeWgwMHJmeTMxdQ%3D%3D&utm_source=qr" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="group relative p-3 border border-black/10 rounded-full hover:border-burgundy hover:bg-burgundy hover:text-white transition-all duration-500 hover:scale-110 shadow-sm hover:shadow-burgundy/20"
+                    aria-label="Instagram"
+                  >
+                    <Instagram size={20} className="transition-transform duration-500 group-hover:rotate-12" />
+                  </a>
+                  <a 
+                    href="https://wa.me/voidlab" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="group relative p-3 border border-black/10 rounded-full hover:border-burgundy hover:bg-burgundy hover:text-white transition-all duration-500 hover:scale-110 shadow-sm hover:shadow-burgundy/20"
+                    aria-label="WhatsApp"
+                  >
+                    <MessageCircle size={20} className="transition-transform duration-500 group-hover:-rotate-12" />
+                  </a>
+                  <a 
+                    href="https://www.tiktok.com/@voidlabworld?_r=1&_t=ZS-95ebC2h6CL2" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="group relative p-3 border border-black/10 rounded-full hover:border-burgundy hover:bg-burgundy hover:text-white transition-all duration-500 hover:scale-110 shadow-sm hover:shadow-burgundy/20"
+                    aria-label="TikTok"
+                  >
+                    <Music2 size={20} className="transition-transform duration-500 group-hover:rotate-12" />
+                  </a>
                 </div>
               </div>
               <div className="mt-20">
