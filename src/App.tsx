@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowUpRight, Mail, Instagram, Music2, MessageCircle } from "lucide-react";
 
-const CANVA_URL = "https://www.canva.com/";
+const CANVA_URL = "https://void-lab.my.canva.site/";
 
 const marqueeVariants = {
   animate: {
@@ -262,7 +262,7 @@ export default function App() {
                 </p>
                 
                 <div className="mt-12 flex gap-4">
-                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
+                  <a href={CANVA_URL} target="_blank" rel="noopener noreferrer" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
                 </div>
               </motion.div>
 
@@ -297,7 +297,7 @@ export default function App() {
                 </p>
                 
                 <div className="mt-12 flex gap-4">
-                  <a href="#" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
+                  <a href={CANVA_URL} target="_blank" rel="noopener noreferrer" className="p-4 border-2 border-black hover:bg-black hover:text-vanilla transition-all"><ArrowUpRight size={18} /></a>
                 </div>
               </motion.div>
             </div>
@@ -333,7 +333,7 @@ export default function App() {
                     <Instagram size={20} className="transition-transform duration-500 group-hover:rotate-12" />
                   </a>
                   <a 
-                    href="https://wa.me/voidlab" 
+                    href="https://wa.me/971506638099" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="group relative p-3 border border-black/10 rounded-full hover:border-burgundy hover:bg-burgundy hover:text-white transition-all duration-500 hover:scale-110 shadow-sm hover:shadow-burgundy/20"
