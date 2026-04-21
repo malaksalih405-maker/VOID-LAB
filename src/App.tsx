@@ -38,7 +38,7 @@ export default function App() {
             Work
           </motion.a>
           <motion.a 
-            href="mailto:voidlabteam@gmail.com"
+            href="mailto:hello@voidlabco.com"
             className="bg-black text-white px-6 py-2 text-xs uppercase tracking-widest font-bold hover:bg-burgundy transition-colors flex items-center gap-2"
           >
             Connect
@@ -315,10 +315,10 @@ export default function App() {
                 For serious collaborations and <span className="text-burgundy underline">long-term partnerships</span>.
               </h3>
               <a 
-                href="mailto:voidlabteam@gmail.com"
+                href="mailto:hello@voidlabco.com"
                 className="font-display text-2xl md:text-4xl font-bold border-b-4 border-black hover:text-burgundy hover:border-burgundy transition-all inline-block pb-2"
               >
-                voidlabteam@gmail.com
+                hello@voidlabco.com
               </a>
             </div>
             
