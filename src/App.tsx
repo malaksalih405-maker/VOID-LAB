@@ -60,10 +60,14 @@ export default function App() {
               <span className="text-burgundy">LAB.</span>
             </h1>
             
+              <p className="text-sm md:text-base uppercase tracking-[0.2em] font-bold mb-12 opacity-70">
+                Brand & Digital Experience Agency in UAE
+              </p>
+            
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mt-20">
               <div className="md:col-span-8">
                 <p className="font-display text-2xl md:text-4xl lg:text-5xl font-medium leading-[1.1] tracking-tight text-balance text-black">
-                  We design and build high-performance digital systems for modern brands.
+                 We are a UAE-based brand and digital experience agency designing and building high-performance digital systems for modern brands. 
                 </p>
                 <p className="font-display text-sm md:text-lg tracking-[0.2em] uppercase opacity-50 mt-8">
                   Built for brands operating at scale.
