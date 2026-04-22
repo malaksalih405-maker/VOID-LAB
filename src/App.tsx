@@ -345,7 +345,7 @@ export default function App() {
                     <MessageCircle size={20} className="transition-transform duration-500 group-hover:-rotate-12" />
                   </a>
                   <a 
-                    href="https://www.tiktok.com/@voidlabworld?_r=1&_t=ZS-95ebC2h6CL2" 
+                    href="https://www.tiktok.com/@voidlaco_?_r=1&_t=ZS-95ebC2h6CL2" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="group relative p-3 border border-black/10 rounded-full hover:border-burgundy hover:bg-burgundy hover:text-white transition-all duration-500 hover:scale-110 shadow-sm hover:shadow-burgundy/20"
