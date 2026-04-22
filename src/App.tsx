@@ -60,14 +60,15 @@ export default function App() {
               <span className="text-burgundy">LAB.</span>
             </h1>
             
-              <p className="text-sm md:text-base uppercase tracking-[0.2em] font-bold mb-12 opacity-70">
-                Brand & Digital Experience Agency in UAE
-              </p>
+            <p className="text-sm md:text-base uppercase tracking-[0.2em] font-bold mb-12 opacity-70">
+              Brand & Digital Experience Agency in UAE
+            </p>
             
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mt-20">
               <div className="md:col-span-8">
                 <p className="font-display text-2xl md:text-4xl lg:text-5xl font-medium leading-[1.1] tracking-tight text-balance text-black">
-                  High-performance digital systems for modern brands.                </p>
+                  High-performance digital systems for modern brands.
+                </p>
                 <p className="font-display text-sm md:text-lg tracking-[0.2em] uppercase opacity-50 mt-8">
                   Built for brands operating at scale.
                 </p>
@@ -94,7 +95,7 @@ export default function App() {
           >
             {[...Array(6)].map((_, i) => (
               <div key={i} className="flex items-center gap-20">
-                <span className="font-display font-black text-7xl md:text-9xl uppercase italic outline-text text-transparent" style={{ WebkitTextStroke: '2px black' }}>
+                <span className="font-display font-black text-7xl md:text-9xl uppercase italic outline-text text-transparent" style={{ WebkitTextStroke: "2px black" }}>
                   VOID LAB
                 </span>
                 <span className="font-display font-black text-7xl md:text-9xl uppercase text-burgundy">
@@ -192,7 +193,6 @@ export default function App() {
                 initial="initial"
                 className="relative flex items-center gap-6 bg-vanilla text-black px-12 py-5 rounded-full border-2 border-black overflow-hidden group/btn shadow-xl"
               >
-                {/* Luxury Fill Effect */}
                 <motion.div 
                   variants={{
                     hover: { y: 0 },
@@ -216,7 +216,6 @@ export default function App() {
             </motion.div>
           </motion.div>
           
-          {/* Decorative Elements */}
           <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <motion.div 
               animate={{ 
@@ -327,7 +326,7 @@ export default function App() {
                 <p className="text-xs uppercase tracking-[0.3em] font-black">CONNECT</p>
                 <div className="flex gap-8 justify-end items-center">
                   <a 
-                    href="https://www.instagram.com/voidlabworld?igsh=MWdqeWgwMHJmeTMxdQ%3D%3D&utm_source=qr" 
+                    href="https://www.instagram.com/voidlabco_/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="group relative p-3 border border-black/10 rounded-full hover:border-burgundy hover:bg-burgundy hover:text-white transition-all duration-500 hover:scale-110 shadow-sm hover:shadow-burgundy/20"
@@ -345,7 +344,7 @@ export default function App() {
                     <MessageCircle size={20} className="transition-transform duration-500 group-hover:-rotate-12" />
                   </a>
                   <a 
-                    href="https://www.tiktok.com/@voidlaco_?_r=1&_t=ZS-95ebC2h6CL2" 
+                    href="https://www.tiktok.com/@voidlabworld" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="group relative p-3 border border-black/10 rounded-full hover:border-burgundy hover:bg-burgundy hover:text-white transition-all duration-500 hover:scale-110 shadow-sm hover:shadow-burgundy/20"
@@ -364,7 +363,6 @@ export default function App() {
           </div>
         </footer>
       </main>
-
     </div>
   );
 }
